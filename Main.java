@@ -1,6 +1,7 @@
-public class Main {
+public class Main{
   public static void main(String[] args) {
-    System.out.println("すっきり魔王討伐");
-    System.out.println("Ver.0.1 by 楓");
+    final double PI = 3.14;
+    int pie = 5;
+    System.out.println(PI);
   }
 }

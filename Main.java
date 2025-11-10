@@ -1,7 +1,10 @@
-public class Main{
+public class Main {
   public static void main(String[] args) {
-    final double PI = 3.14;
-    int pie = 5;
-    System.out.println(PI);
+    String prof = """
+          今日は眠いね
+          明日はいい日になるかな。。
+          正直疲れたよ
+        """;
+    System.out.println(prof);
   }
 }

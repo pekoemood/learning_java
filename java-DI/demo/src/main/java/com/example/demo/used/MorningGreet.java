@@ -1,0 +1,12 @@
+package com.example.demo.used;
+
+/**
+ * 朝の挨拶を行う
+ */
+
+public class MorningGreet implements Greet {
+  @Override
+  public String greeting() {
+    return "おはようございます";
+  }
+}

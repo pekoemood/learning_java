@@ -4,24 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.demo.used.Greet;
+import com.example.demo.example.Example;
 
-/**
- * SpringBoot起動クラス
- * @param args コマンドライン引数
- */
 @SpringBootApplication
 public class DemoApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args).getBean(DemoApplication.class).execute();
+		SpringApplication.run(DemoApplication.class, args).getBean(DemoApplication.class).exe();;
 	}
 
 	@Autowired
-	private Greet g;
+	private Example example;
 
-	public void execute() {
-		String msg = g.greeting();
-		System.out.println(msg);
+	private void exe() {
+		example.run();
 	}
+
 
 }

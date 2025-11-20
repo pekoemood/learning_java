@@ -16,6 +16,7 @@ public class LoggingAspect {
     LocalDateTime startTime = LocalDateTime.now(); //現在の日時を取得
     String formattedTime = startTime.format(DateTimeFormatter.ofPattern("HH:mm:ss:SSS"));
     System.out.println("------[@Before]------");
-    System.out.println("Before method:" + joinPoint.getSig)
+    System.out.println("Before method:" + joinPoint.getSignature());
+    System.out.println("メソッド開始: " + formattedTime);
   }
 }

@@ -19,4 +19,13 @@ public class LoggingAspect {
     System.out.println("Before method:" + joinPoint.getSignature());
     System.out.println("メソッド開始: " + formattedTime);
   }
+
+  //@After("execution(* com.example.demo.service.TargetService.*(..))")
+  public void afterAdvice(JoinPoint joinPoint) {
+    LocalDateTime endTime = LocalDateTime.now(); //現在の日時を取得
+    String formattedTime = endTime.format(DateTimeFormatter.ofPattern("HH:mm:ss:SSS"));
+    System.out.println("------[@After]------");
+    System.out.println("After method: " + joinPoint.getSignature());
+    System.out.println("メソッド終了" + formattedTime);
+  }
 }
